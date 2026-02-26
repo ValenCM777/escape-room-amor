@@ -1,7 +1,7 @@
 // Sala 1: validar fecha
 function validarSala1() {
   let respuesta = document.getElementById("respuesta1").value;
-  // Ajusta la fecha correcta aquí (ejemplo: 26-11-2025)
+  // Ajusta la fecha correcta aquí
   if (respuesta === "23-10-2025") {
     window.location.href = "sala2.html";
   } else {
@@ -50,6 +50,7 @@ function validarSala4() {
     alert("Ups, alguna respuesta no es correcta… inténtalo de nuevo 💜🧡");
   }
 }
+
 
 
 
