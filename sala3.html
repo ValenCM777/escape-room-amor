@@ -2,16 +2,45 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sala 3 - Lugares favoritos</title>
+  <title>Sala 3 - Recuerdos</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .acertijo {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 600px;
+      color: #fff;
+      animation: floatMsg 5s infinite alternate;
+      font-style: italic;
+    }
+    @keyframes floatMsg {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+    }
+  </style>
 </head>
-<body>
-  <h1>🔍 Busca en el código</h1>
-  <p>La clave está escondida en el CSS...</p>
+<body class="sala3">
+  <div class="caja-flotante">
+    <h1>🕵️ El verdadero agente sabe dónde buscar los recuerdos…</h1>
+    <p>Resuelve este acertijo poético y luego escribe la respuesta final:</p>
 
-  <input type="text" id="respuesta3" placeholder="Clave oculta">
-  <button onclick="validarSala3()">Comprobar</button>
+    <div class="acertijo">
+      <p>
+        “Un lugar de magia y cultura, <br>
+        con animales y aventuras, <br>
+        no es zoológico ni museo, <br>
+        pero guarda historia y juego.”
+      </p>
+    </div>
 
+    <p>👉 Escribe la respuesta final (nuestro lugar favorito):</p>
+    <input type="text" id="respuesta3" placeholder="Lugar favorito">
+    <input type="text" id="respuestaPy" placeholder="Clave del reto Python">
+    <button onclick="validarSala3()">Comprobar</button>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
+
