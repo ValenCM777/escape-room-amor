@@ -160,6 +160,25 @@ input {
   50% { transform: translateY(-200px) rotate(45deg); opacity: 0.7; }
   100% { transform: translateY(-400px) rotate(45deg); opacity: 0; }
 }
+/* Botón centrado SOLO en Sala 4 */
+body.sala4 .btn-centro {
+  display: block;        /* ocupa toda la línea */
+  margin: 20px auto;     /* centra horizontalmente */
+  background-color: var(--naranja);
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-align: center;
+}
+body.sala4 .btn-centro:hover {
+  background-color: var(--morado);
+  box-shadow: 0 0 15px var(--naranja);
+}
+
 
 
 
