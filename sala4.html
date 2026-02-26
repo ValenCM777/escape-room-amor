@@ -7,17 +7,20 @@
   <style>
     .pregunta {
       margin: 20px 0;
-      text-align: center; /* 👈 Centra cada bloque */
+      text-align: center; /* 👈 Centra todo el bloque */
     }
     .pregunta p {
       font-weight: bold;
       color: var(--naranja);
       text-shadow: 0 0 10px var(--morado);
     }
-    .pregunta label {
+    .opciones {
+      display: inline-block; /* 👈 Hace que las respuestas se agrupen centradas */
+      text-align: left;      /* 👈 Mantiene texto alineado al lado del radio */
+    }
+    .opciones label {
       display: block;
       margin: 5px 0;
-      text-align: center;
     }
   </style>
 </head>
@@ -28,26 +31,34 @@
 
       <div class="pregunta">
         <p>1. ¿Cuál es mi color favorito?</p>
-        <label><input type="radio" name="q1" value="lila"> Lila</label>
-        <label><input type="radio" name="q1" value="azul"> Azul</label>
+        <div class="opciones">
+          <label><input type="radio" name="q1" value="lila"> Lila</label>
+          <label><input type="radio" name="q1" value="azul"> Azul</label>
+        </div>
       </div>
 
       <div class="pregunta">
         <p>2. ¿Dónde fue nuestra primera cita?</p>
-        <label><input type="radio" name="q2" value="museo"> Museo</label>
-        <label><input type="radio" name="q2" value="cine"> Cine</label>
+        <div class="opciones">
+          <label><input type="radio" name="q2" value="museo"> Museo</label>
+          <label><input type="radio" name="q2" value="cine"> Cine</label>
+        </div>
       </div>
 
       <div class="pregunta">
         <p>3. ¿Cuál es la actividad que más disfrutamos juntos?</p>
-        <label><input type="radio" name="q3" value="cine"> Cine</label>
-        <label><input type="radio" name="q3" value="volley"> Volleyball</label>
+        <div class="opciones">
+          <label><input type="radio" name="q3" value="cine"> Cine</label>
+          <label><input type="radio" name="q3" value="volley"> Volleyball</label>
+        </div>
       </div>
 
       <div class="pregunta">
         <p>4. ¿En qué fecha fue nuestro primer beso?</p>
-        <label><input type="radio" name="q4" value="26-11-2025"> 26-11-2025</label>
-        <label><input type="radio" name="q4" value="23-10"> 23-10</label>
+        <div class="opciones">
+          <label><input type="radio" name="q4" value="26-11-2025"> 26-11-2025</label>
+          <label><input type="radio" name="q4" value="23-10"> 23-10</label>
+        </div>
       </div>
 
       <button type="button" onclick="validarSala4()">Comprobar</button>
@@ -56,6 +67,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
