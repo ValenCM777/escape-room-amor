@@ -1,58 +1,76 @@
-/* Estilo general para todas las salas */
+/* Colores base */
+:root {
+  --morado: #6a0dad;
+  --naranja: #ff6600;
+}
+
+/* Estilo general */
 body {
-  background-color: #0d0d0d;
-  color: #00ff99;
   font-family: 'Courier New', monospace;
   text-align: center;
-  padding: 50px;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: #00ffcc;
-  margin-bottom: 20px;
-}
-
-p {
-  margin: 15px 0;
-  line-height: 1.5;
-}
-
-input, button {
-  margin-top: 20px;
-  padding: 10px;
-  font-size: 16px;
-}
-
-button {
-  background-color: #00ff99;
-  border: none;
-  cursor: pointer;
-  color: #0d0d0d;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #009966;
-  color: #fff;
-}
-
-/* Clave oculta para Sala 3 */
- /* clave: parque jaime duque */
-
-/* Sala 5 - estilo del mensaje final */
-#mensajeFinal {
-  background-color: rgba(255, 255, 255, 0.1);
+.caja-flotante {
+  background: rgba(255,255,255,0.1);
   padding: 30px;
   border-radius: 15px;
-  color: #fff;
-  font-family: 'Georgia', serif;
-  max-width: 800px;
-  margin: auto;
-  position: relative;
-  z-index: 2;
+  margin: 100px auto;
+  max-width: 600px;
+  color: white;
 }
 
-/* Animación de corazones flotando */
+/* Botones */
+button {
+  background-color: var(--naranja);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: var(--morado);
+  box-shadow: 0 0 10px var(--naranja);
+}
+
+/* Fondos por sala */
+.sala1 {
+  background: url('arcade.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.sala2 {
+  background: url('numeros-retro.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.sala3 {
+  background: url('consola-vieja.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #00ff99;
+}
+.sala4 {
+  background: url('retro-game.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.sala5 {
+  background: linear-gradient(var(--morado), var(--naranja));
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.galeria img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+/* Corazones flotando */
 .heart {
   position: fixed;
   width: 20px;
@@ -61,7 +79,6 @@ button:hover {
   transform: rotate(45deg);
   animation: float 6s infinite;
 }
-
 .heart::before,
 .heart::after {
   content: "";
@@ -71,19 +88,10 @@ button:hover {
   background-color: red;
   border-radius: 50%;
 }
-
-.heart::before {
-  top: -10px;
-  left: 0;
-}
-
-.heart::after {
-  left: 10px;
-  top: 0;
-}
+.heart::before { top: -10px; left: 0; }
+.heart::after { left: 10px; top: 0; }
 
 @keyframes float {
   0% { transform: translateY(0) rotate(45deg); opacity: 1; }
   50% { transform: translateY(-200px) rotate(45deg); opacity: 0.7; }
-  100% { transform: translateY(-400px) rotate(45deg); opacity: 0; }
-}
+  100% { transform: translateY(-400px) rotate(45deg); opacity: 
