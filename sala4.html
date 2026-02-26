@@ -2,18 +2,32 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sala 4 - Adivinanzas románticas</title>
+  <title>Sala 4 - Quiz Romántico</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>💖 Preguntas Especiales</h1>
-  <p>Responde correctamente para avanzar:</p>
-  
-  <button onclick="validarSala4('lila')">¿Cuál es mi color favorito? → Lila</button>
-  <button onclick="validarSala4('museo')">¿Dónde fue nuestra primera salida? → Museo</button>
-  <button onclick="validarSala4('cine')">¿Dónde fue nuestra primera cita? → Cine</button>
-  <button onclick="validarSala4('26-11')">¿Cuándo nos dimos nuestro primer beso? → 26 de noviembre</button>
+<body class="sala4">
+  <div class="caja-flotante">
+    <h1>💜 Quiz del Amor Retro</h1>
+    <form id="quizForm">
+      <p>1. ¿Cuál es mi color favorito?</p>
+      <input type="radio" name="q1" value="lila"> Lila<br>
+      <input type="radio" name="q1" value="azul"> Azul<br>
 
+      <p>2. ¿Dónde fue nuestra primera salida?</p>
+      <input type="radio" name="q2" value="museo"> Museo<br>
+      <input type="radio" name="q2" value="cine"> Cine<br>
+
+      <p>3. ¿Qué actividad disfrutamos juntos?</p>
+      <input type="radio" name="q3" value="cine"> Cine<br>
+      <input type="radio" name="q3" value="volley"> Volleyball<br>
+
+      <p>4. ¿Cuál es nuestra fecha especial?</p>
+      <input type="radio" name="q4" value="26-11"> 26-11<br>
+      <input type="radio" name="q4" value="23-10"> 23-10<br>
+
+      <button type="button" onclick="validarSala4()">Comprobar</button>
+    </form>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
