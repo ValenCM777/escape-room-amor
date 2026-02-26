@@ -9,34 +9,34 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh; /* ocupa toda la pantalla */
+      min-height: 100vh;
       background-color: black;
       margin: 0;
     }
     #mensajeFinal {
-      background: rgba(255,255,255,0.1); /* cuadro transparente */
+      background: rgba(255,255,255,0.1);
       padding: 30px;
       border-radius: 15px;
       max-width: 800px;
       color: white;
-      text-align: left;   /* 👈 ahora alineado a la izquierda */
+      text-align: left;   /* 👈 mensaje alineado a la izquierda */
       font-size: 18px;
       line-height: 1.6;
       box-shadow: 0 0 20px var(--morado);
-      overflow-y: auto;   /* si el texto es largo, permite scroll */
-      max-height: 90vh;   /* evita que se salga de la pantalla */
+      overflow-y: auto;
+      max-height: 90vh;
     }
     #mensajeFinal h1 {
       font-size: 40px;
       color: var(--naranja);
       text-shadow: 0 0 15px var(--morado);
-      text-align: center; /* título centrado */
+      text-align: center;
       margin-bottom: 10px;
     }
     #mensajeFinal h2 {
       font-size: 20px;
       color: white;
-      text-align: center; /* subtítulo centrado */
+      text-align: center;
       margin-bottom: 30px;
     }
     .galeria {
@@ -47,8 +47,8 @@
       flex-wrap: wrap;
     }
     .galeria img {
-      width: 200px;   /* más grandes */
-      height: 200px;  /* cuadradas */
+      width: 220px;
+      height: 220px;
       object-fit: cover;
       border-radius: 15px;
       box-shadow: 0 0 15px var(--naranja);
@@ -56,6 +56,13 @@
   </style>
 </head>
 <body class="sala5">
+
+  <!-- 🎵 Audio automático -->
+  <audio autoplay loop>
+    <source src="Ed Sheeran - Perfect  (Instrumental, Violin Version).mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
   <div id="mensajeFinal">
     <h1>💌 Mensaje Final</h1>
     <h2>Has llegado al final de nuestra misión secreta… y aquí está mi sorpresa para ti 💜🧡</h2>
@@ -92,7 +99,7 @@ Gracias por estos 100 días, gracias por compartirlos conmigo. Te amo mucho. �
 
     <p><strong>Tu solecito.</strong></p>
 
-    <!-- Galería de fotos -->
+    <!-- Galería de fotos en formato jpeg -->
     <div class="galeria">
       <img src="foto1.jpeg" alt="Recuerdo 1">
       <img src="foto2.jpeg" alt="Recuerdo 2">
