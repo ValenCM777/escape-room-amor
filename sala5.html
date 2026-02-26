@@ -2,27 +2,65 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sala Final</title>
+  <title>Sala 5 - Mensaje Final</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    #mensajeFinal {
+      background: rgba(255,255,255,0.2);
+      padding: 30px;
+      border-radius: 15px;
+      margin: 100px auto;
+      max-width: 700px;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+    }
+    #mensajeFinal h1 {
+      font-size: 40px;
+      color: #ffccff;
+    }
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .galeria img {
+      width: 150px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff6600;
+    }
+  </style>
 </head>
-<body>
-  <h1>🎉 ¡Misión cumplida, agente!</h1>
+<body class="sala5">
   <div id="mensajeFinal">
-    <p>MI AMOR,</p>
-    <p>Hoy celebramos más que 100 días de racha, celebramos estar juntos y compartir más que momentos y recuerdos bonitos. Es el poder de estar juntos. De verdad que estos 100 días se hacen cortos para lo que quisiera estar contigo...</p>
-    <p>El verte, tomarte de la mano, abrazarte… es de las mejores sensaciones. Lo que me haces sentir cuando te tengo cerca no sé si se pueda explicar: cuando me llenas de besitos, cuando me miras con esos ojitos como si vieras algo muy hermoso… es de verdad increíble. Perdóname si a veces soy muy cansona o si cuando hablamos me demoro mucho, aunque pueda ser egoísta de mi parte por tu valioso tiempo. Pero es que me encanta hablar contigo. Siempre encuentro de qué hablar, aunque cuando le doy al botón no tenga idea qué decir.</p>
-    <p>Quiero que esos kilómetros que nos separan sean solo centímetros a tu lado. Quiero que sepas lo orgullosa que estoy de ti y de lo que estás logrando, de que estés haciendo tu maestría en lo que amas y te apasiona. Deseo que esos sueños tuyos se hagan realidad. Eres de los hombres más inteligentes que conozco, tanto que hasta me sabes confundir cuando estás jugando conmigo. Sé que te cuesta creerlo cuando lo digo, pero de verdad, cielo, eres hermoso: tu esencia y tu exterior son realmente lindos. Uno de mis deseos es que cuando te veas en el espejo, te veas como yo te veo: como un hombre guapo, suficiente y capaz de enfrentar todo.</p>
-    <p>Sé que lo que voy a decir puede ser sensible, pero cielo, cuando te veo entiendo aún más que todo lo que Dios hace es perfecto. Sé que puedes lograr grandes cosas de la mano de Dios. Pido que sientas su amor y que Él cumpla cada anhelo y deseo de tu corazón, porque Él es el único que lo conoce a fondo.</p>
-    <p>Gracias por darme tanto amor, que estoy aprendiendo a recibir. Sé que me puedo equivocar por falta de experiencia, porque créeme, son cosas que nunca había vivido hasta que llegaste tú y me mostraste que el amor va más allá de un sentimiento. También refleja lo que somos. Cada detalle, cada caricia, se siente tan especial: cuando me sobas la cabecita, cuando sabes que en el cine lo que quiero es arrucharme a tu lado, cuando me llevas de la mano, cuando muevo mi manita porque la soltaste y no quiero que la sueltes jajaja, cuando hago pucheros porque no quiero que te vayas o porque simplemente quiero quedarme contigo cinco minutos más.</p>
-    <p>Me acompañas a la casa porque no quieres que duerma en la ventana, sino en tu regazo, aunque sepas que son tres horas más para llegar a tu casa después de un día largo. Nunca pensé que algún día experimentaría todo esto y que hoy estaría escribiéndote este mensaje. Pero qué lindo es sorprenderse y saber que estás aquí. Por eso te hago este detalle: porque lo que haces y cómo me haces sentir me inspira a esforzarme, a ser creativa para sorprenderte, y a hacer este tipo de detalles que puedan gustarte y recordarte lo especial que eres en mi vida.</p>
-    <p>Gracias por estos 100 días, gracias por compartirlos conmigo. Te amo mucho. 💕</p>
-    <p><strong>Tu solecito.</strong></p>
+    <h1>💌 Mensaje Final</h1>
+    <p>Has llegado al final de nuestra misión secreta… y aquí está mi sorpresa para ti 💜🧡</p>
+    
+    <!-- Música -->
+    <audio controls autoplay>
+      <source src="perfect.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+
+    <!-- Galería de fotos -->
+    <div class="galeria">
+      <img src="foto1.jpg" alt="Recuerdo 1">
+      <img src="foto2.jpg" alt="Recuerdo 2">
+      <img src="foto3.jpg" alt="Recuerdo 3">
+    </div>
+
+    <!-- Botón secreto -->
+    <button onclick="alert('Siempre serás mi agente favorito 💕')">Descubre un secreto</button>
   </div>
 
-  <!-- Música de fondo -->
-  <audio autoplay loop>
-    <source src="perfect.mp3" type="audio/mpeg">
-    Tu navegador no soporta audio.
-  </audio>
+  <!-- Corazones flotando -->
+  <div class="heart" style="left:20%;"></div>
+  <div class="heart" style="left:40%;"></div>
+  <div class="heart" style="left:60%;"></div>
+  <div class="heart" style="left:80%;"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
