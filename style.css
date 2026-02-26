@@ -61,8 +61,8 @@ input {
 
 /* Sala 2 */
 .sala2 h1 {
-  color: var(--morado);
-  text-shadow: 0 0 10px var(--naranja);
+  color: var(--naranja);
+  text-shadow: 0 0 10px var(--morado);
 }
 
 /* Sala 3 */
@@ -87,8 +87,8 @@ input {
 
 /* Sala 4 */
 .sala4 h1 {
-  color: var(--morado);
-  text-shadow: 0 0 10px var(--naranja);
+  color: var(--naranja);
+  text-shadow: 0 0 10px var(--morado);
 }
 .sala4 form {
   text-align: left;
@@ -160,5 +160,6 @@ input {
   50% { transform: translateY(-200px) rotate(45deg); opacity: 0.7; }
   100% { transform: translateY(-400px) rotate(45deg); opacity: 0; }
 }
+
 
 
