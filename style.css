@@ -1,0 +1,89 @@
+/* Estilo general para todas las salas */
+body {
+  background-color: #0d0d0d;
+  color: #00ff99;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+input, button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #00ff99;
+  border: none;
+  cursor: pointer;
+  color: #0d0d0d;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #009966;
+  color: #fff;
+}
+
+/* Clave oculta para Sala 3 */
+ /* clave: parque jaime duque */
+
+/* Sala 5 - estilo del mensaje final */
+#mensajeFinal {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Animación de corazones flotando */
+.heart {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  transform: rotate(45deg);
+  animation: float 6s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: 10px;
+  top: 0;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(45deg); opacity: 1; }
+  50% { transform: translateY(-200px) rotate(45deg); opacity: 0.7; }
+  100% { transform: translateY(-400px) rotate(45deg); opacity: 0; }
+}
