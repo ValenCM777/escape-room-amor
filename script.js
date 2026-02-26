@@ -43,10 +43,12 @@ function validarSala4() {
     return;
   }
 
-  // Respuestas correctas: lila, cine, cine, 26-11
-  if (q1.value === "lila" && q2.value === "cine" && q3.value === "cine" && q4.value === "26-11") {
+  // Respuestas correctas: lila, cine, cine, 26-11-2025
+  if (q1.value === "lila" && q2.value === "cine" && q3.value === "cine" && q4.value === "26-11-2025") {
     window.location.href = "sala5.html";
   } else {
     alert("Ups, alguna respuesta no es correcta… inténtalo de nuevo 💜🧡");
   }
 }
+
+
